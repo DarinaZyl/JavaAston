@@ -5,6 +5,14 @@ public class Key implements Openable {
         this.key = key;
     }
 
+    public Key() {
+
+    }
+
+    public String getKey() {
+        return key;
+    }
+
     @Override
     public String toString() {
         return "Key{" +

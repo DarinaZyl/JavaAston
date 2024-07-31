@@ -23,6 +23,10 @@ public abstract class Car {
         this.key = key;
     }
 
+    public Key[] getKey() {
+        return key;
+    }
+
     @Override
     public String toString() {
         return "Car{" +

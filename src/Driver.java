@@ -22,6 +22,10 @@ public abstract class Driver implements Openable, Startable, Boardingable, Refue
         this.key = key;
     }
 
+    public Key[] getKey() {
+        return key;
+    }
+
     @Override
     public String toString() {
         return "Driver{" +

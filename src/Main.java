@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,9 +18,7 @@ public class Main {
                         RightsCategory.B
                 },
                 new Key[]{
-                        new Key("ert1542"),
-                        new Key("kju1548")
-                },
+                        new Key("ert1542")},
                 "X7"
         );
 
@@ -40,21 +39,16 @@ public class Main {
 
         System.out.println("Первый водитель " + driver1);
 
-        /*
+        System.out.println("У водителя есть следующие ключи " + Arrays.toString(driver1.getKey()));
+        System.out.println("Машину можно открыть следующим ключом " + Arrays.toString(car1.getKey()));
 
-        if (driverKey.equals(avtoKey)){
-            System.out.println("Автомобиль с мотором " + car.getMotor().getName()
-                    + " объемом " + car.getMotor().getVolume()
-            );
-            driver.open();
-            driver.refill();
-            System.out.println(driver.openAndStartCar());
-            driver.getPassengers();
-            driver.drive();
-        }
-        else {
-            System.out.println("У водителя нет ключа от машины");
-        };*/
+        /*здесь хочу дописать проверку ключей машины и водителя и если совпадает хоть 1,
+        то проверку категорий водителя и машины и тогда завети ее водителем
+
+        но пока что не получилось забрать значения ключей по 1 для сверки (а может времени не хватило подумать)
+        */
+
+        System.out.println("Дальше нужно дописать!!!!!!!");
 
 
     }
