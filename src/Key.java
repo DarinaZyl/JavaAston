@@ -1,4 +1,4 @@
-public class Key {
+public class Key implements Openable {
     private String key;
 
     public Key(String key) {
@@ -10,5 +10,10 @@ public class Key {
         return "Key{" +
                 "key='" + key + '\'' +
                 '}';
+    }
+
+    @Override
+    public void open() {
+        System.out.println("Ключ может открыть замок");
     }
 }

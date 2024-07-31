@@ -11,7 +11,7 @@
 
 import java.util.Arrays;
 
-public abstract class Driver {
+public abstract class Driver implements Openable, Startable, Boardingable, Refuelable{
     private int experience;
     private RightsCategory[] category;
     private Key[] key;
@@ -29,5 +29,25 @@ public abstract class Driver {
                 ", category=" + Arrays.toString(category) +
                 ", key=" + Arrays.toString(key) +
                 '}';
+    }
+
+    @Override
+    public void open() {
+        System.out.println("Водитель может открыть дверь ");
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Водитель завел автомобиль ");
+    }
+
+    @Override
+    public void boarding() {
+        System.out.println("Водитель принял пассажиров ");
+    }
+
+    @Override
+    public void refuel() {
+        System.out.println("Водитель заправил автомобиль ");
     }
 }
