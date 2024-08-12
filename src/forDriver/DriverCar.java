@@ -1,4 +1,9 @@
-public class DriverCar extends Driver{
+package forDriver;
+
+import forAll.Key;
+import forAll.RightsCategory;
+
+public class DriverCar extends Driver {
     private String fio;
 
     public DriverCar(int experience, RightsCategory[] category, Key[] key, String fio) {
@@ -9,7 +14,7 @@ public class DriverCar extends Driver{
 
     @Override
     public String toString() {
-        return "DriverCar{" +
+        return "forDriver.DriverCar{" +
                 "fio='" + fio + '\'' +
                 super.toString() + " " +
                 '}';

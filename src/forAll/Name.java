@@ -1,3 +1,5 @@
+package forAll;
+
 public abstract class Name {
     private String name;
 

@@ -1,3 +1,5 @@
+package forAll;
+
 public enum RightsCategory {
     A,
     B,

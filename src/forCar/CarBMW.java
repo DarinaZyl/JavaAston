@@ -1,3 +1,8 @@
+package forCar;
+
+import forAll.Key;
+import forAll.RightsCategory;
+
 public class CarBMW extends Car {
     private String model;
 
@@ -8,7 +13,7 @@ public class CarBMW extends Car {
 
     @Override
     public String toString() {
-        return "CarBMW{" +
+        return "forCar.CarBMW{" +
                 "model='" + model + '\'' +
                 super.toString() + " " +
                 '}';

@@ -1,7 +1,10 @@
-/*1.1) Мотор
+package forCar;/*1.1) Мотор
  1.1.1) Имеет объем
  1.1.2) Хранит информацию о бензине который в него можно заливать
  1.1.3) Имеет наименование*/
+
+import forAll.Fuel;
+import forAll.Name;
 
 public class Motor extends Name {
     private double volume;
@@ -15,7 +18,7 @@ public class Motor extends Name {
 
     @Override
     public String toString() {
-        return "Motor{" +
+        return "forCar.Motor{" +
                 super.toString() + " " +
                 "volume=" + volume +
                 ", fuel=" + fuel +

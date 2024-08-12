@@ -1,3 +1,5 @@
+package forAll;
+
 public class Key implements Openable {
     private String key;
 
@@ -15,7 +17,7 @@ public class Key implements Openable {
 
     @Override
     public String toString() {
-        return "Key{" +
+        return "forAll.Key{" +
                 "key='" + key + '\'' +
                 '}';
     }

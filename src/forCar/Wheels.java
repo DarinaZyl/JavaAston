@@ -1,7 +1,9 @@
-/*1.2) Колеса
+package forCar;/*1.2) Колеса
  1.2.1) Имеет радиус или диаметр
  1.2.2) Имеют три варианта сезонности: зимние\летние\всесезонные
  1.2.3) Имеет наименование*/
+
+import forAll.Name;
 
 public class Wheels extends Name {
     private int diameter;
@@ -15,7 +17,7 @@ public class Wheels extends Name {
 
     @Override
     public String toString() {
-        return "Wheels{" +
+        return "forCar.Wheels{" +
                 super.toString() + " " +
                 "diameter=" + diameter +
                 ", season=" + season +

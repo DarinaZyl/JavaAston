@@ -1,3 +1,5 @@
+package forAll;
+
 public enum Fuel {
     AI92,
     AI95,
