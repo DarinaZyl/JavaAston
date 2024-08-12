@@ -4,12 +4,25 @@ public class Ex1_2 {
     public static void main(String[] args) {
         int result;
         int resultFactorial;
+        int intValue = 0;
+        if (args.length == 0){
+            System.out.println("Нет данных для расчета");
+            return;
+        }
 
-        resultFactorial = factorial(3);
-        System.out.println("Результат факториалом: " + resultFactorial);
+        for (String l : args){
+            intValue = Integer.parseInt(l);
+            if (intValue != 0) {
+                resultFactorial = factorial(intValue);
+                System.out.println("Результат факториалом: " + resultFactorial);
 
-        result = getResult(3);
-        System.out.println("Результат циклом для практики синтаксиса: " + result);
+                result = getResult(intValue);
+                System.out.println("Результат циклом для практики синтаксиса: " + result);
+            }
+            else{
+
+            }
+        }
     }
 
     public static int factorial(int x){
